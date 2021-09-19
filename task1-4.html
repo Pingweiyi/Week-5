@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Task 1</title>
+		<meta charset="utf-8">
+		<link rel="stylesheet" href="" type="text/css" />
+		<script src="https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.js"></script>
+	</head>
+	
+
+<body>
+	<div id="task">
+		{{Hi}} <h1>I am {{name}}</h1><br>
+		<p>{{inf}}</p><br>
+		<p>{{inf2}}</p><br>
+		
+		<img v-img="image" src="t1.jpg">
+	</div>
+	
+<div id="wth">
+	<p v-if="weather">It's sunny today</p>
+	<p v-else>It's cloudy today. It may rain.</p>
+</div>
+	
+
+
+<div id="aaa">
+
+  <button v-on:click="hi">Hi</button>
+</div>
+
+
+<div id="bbb">
+  <p>{{ msg }}</p>
+  <input v-model="msg">
+</div>
+		
+	</body>
+	<script src="./task.js"></script>
+</html>
